@@ -1,32 +1,19 @@
 import React from 'react';
 import { Box, Chip, Container, Grid, Stack, Typography, useTheme } from '@mui/material';
-
-
-const Skills = () => {
-
-    const theme = useTheme()
-    const skills: string[] = ["Python3", "FastAPI", "MongoDB", "SQL", "TypeScript", "React", "AngularJS", "Docker", "Kubernetes / OCP", "Grafana", "Jenkins", "Prometheus", "Loki", "Promtail"];
-
-    return (
-        <div>
-            {skills.map((skill: string, index: number) => (
-                <Chip key={index} label={skill} sx={{ margin: '0.5rem', bgcolor: theme.palette.primary.main, color: theme.palette.primary.contrastText }} />
-            ))}
-        </div>
-    );
-};
+import ChipList from './utils/ChipList';
 
 
 const About: React.FC = () => {
 
     const theme = useTheme()
 
+    const skills: string[] = ["Python3", "FastAPI", "MongoDB", "SQL", "TypeScript", "React", "AngularJS", "Docker", "Kubernetes / OCP", "CI/CD", "Grafana", "Jenkins", "Prometheus", "Loki", "Promtail"];
+
     return (
         <Box
             sx={{
                 backgroundColor: theme.palette.background.default,
                 width: '100%',
-                padding: '2rem',
             }}
         >
             <Container sx={{ width: '80%', alignItems: "center" }}>
@@ -52,7 +39,7 @@ const About: React.FC = () => {
                                 Skills
                             </Typography>
                         </Stack>
-                        <Skills />
+                        <ChipList items={skills} />
                     </Grid>
                 </Grid>
             </Container>

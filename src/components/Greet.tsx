@@ -7,9 +7,11 @@ const Greet: React.FC = () => {
     return (
         <Box
             sx={{
-                backgroundColor: theme.palette.grey[100], // Grey background color
+                backgroundColor: theme.palette.grey[200], // Grey background color
                 width: '100%', // Full width
-                padding: '2rem', // Add padding as needed
+                pb: '2rem', // Add padding as needed
+                pt: '2rem',
+                mt: 4,
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -27,7 +29,7 @@ const Greet: React.FC = () => {
                                 <Typography variant="h2" textAlign="center">
                                     Pol Torres Alfonso
                                 </Typography>
-                                <Typography variant="h5" textAlign="center">
+                                <Typography variant="h5" textAlign="center" color={theme.palette.text.secondary}>
                                     I'm a Software Developer & DevOps based in Spain.
                                 </Typography>
                             </Stack>

@@ -6,6 +6,7 @@ import PersonalProjects from './components/PersonalProjects';
 import HireMe from './components/HireMe';
 import Footer from './components/Footer';
 import Greet from './components/Greet';
+import { Container, Stack } from '@mui/material';
 
 const App: React.FC = () => {
   return (
