@@ -1,12 +1,27 @@
 import React from 'react';
-import { Box, Container, Stack, Typography, useTheme } from '@mui/material';
+import { Box, Container, Grid, Stack, Typography, useTheme } from '@mui/material';
 import ChipList from './utils/ChipList';
 
 
 const KyndrylExperience = () => {
 
-  const skills: string[] = ["Python3", "FastAPI", "MongoDB", "SQL", "TypeScript", "React", "AngularJS", "Docker", "Kubernetes / OCP", "CI/CD", "Grafana", "Jenkins", "Prometheus", "Loki", "Promtail"];
-
+  const skills = [
+    { name: 'Python3', link: '' },
+    { name: 'FastAPI', link: '' },
+    { name: 'MongoDB', link: '' },
+    { name: 'SQL', link: '' },
+    { name: 'TypeScript', link: '' },
+    { name: 'React', link: '' },
+    { name: 'AngularJS', link: '' },
+    { name: 'Docker', link: '' },
+    { name: 'Kubernetes / OCP', link: '' },
+    { name: 'CI/CD', link: '' },
+    { name: 'Grafana', link: '' },
+    { name: 'Jenkins', link: '' },
+    { name: 'Prometheus', link: '' },
+    { name: 'Loki', link: '' },
+    { name: 'Promtail', link: '' }
+  ];
 
   return (
     <Stack justifyContent="center" alignItems="center" spacing={1}>
@@ -15,6 +30,17 @@ const KyndrylExperience = () => {
         <Typography> 2020 - Present </Typography>
       </Stack>
       <ChipList items={skills} />
+      <Grid container justifyContent="center" alignItems="center">
+        <Grid item xs={12} sm={9} sx={{my:2}}>
+          <Typography variant='body1' align='justify'>
+            At Kyndryl, I primarily worked as a full stack software developer and DevOps engineer. I was involved in various departments, including <b>Monitoring</b>, <b>Operations</b>, and <b>Automation</b>.
+          </Typography>
+          <br></br>
+          <Typography align='justify'>
+            In each of these departments, I contributed my software engineering expertise to develop and deploy intuitive tools that have helped streamline and automate team and client tasks. I implemented <b>monitoring solutions</b> to ensure proper service control and created pipelines to meet <b>CI/CD</b> requirements by <b>containerizing applications</b> and advocating for the use of <b>infrastructure as code</b>.
+          </Typography>
+        </Grid>
+      </Grid>
     </Stack>
   )
 }

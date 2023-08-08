@@ -12,7 +12,7 @@ const HireMe: React.FC = () => {
 
 
   return (
-    <Container id="hire" sx={{ my: 4, justifyContent: "center", display: "flex" }}>
+    <Container id="contact" sx={{ my: 4, justifyContent: "center", display: "flex" }}>
       <Stack spacing={2} justifyItems={"center"} alignItems={"center"}>
         <Typography variant="h4" sx={{ mb: 2 }}>
           Get in touch!

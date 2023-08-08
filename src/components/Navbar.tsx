@@ -36,7 +36,7 @@ const DropdownMenu = () => {
         <MenuItem onClick={handleClose} href="#about">About</MenuItem>
         <MenuItem onClick={handleClose} href="#experience">Experience</MenuItem>
         <MenuItem onClick={handleClose}href="#projects">Personal Projects</MenuItem>
-        <MenuItem onClick={handleClose}href="#hire">Contact</MenuItem>
+        <MenuItem onClick={handleClose}href="#contact">Contact</MenuItem>
       </Menu>
     </div>
   );
