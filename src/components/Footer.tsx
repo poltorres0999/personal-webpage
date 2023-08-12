@@ -19,8 +19,8 @@ const Footer: React.FC = () => {
         <Container sx={{ justifyContent: "center", display: "flex", pt: 6, pb: 6 }}>
           <Stack justifyContent="center" alignItems="center">
             <Stack direction="row" spacing={2}>
-              <a href="https://www.linkedin.com/poltorresalfonso"><LinkedInIcon /></a>
-              <a href="https://github.com/poltorres0999"><GitHubIcon /></a>
+              <a href="https://es.linkedin.com/in/poltorresalfonso" target='_blank'><LinkedInIcon /></a>
+              <a href="https://github.com/poltorres0999" target='_blank'><GitHubIcon /></a>
             </Stack>
             <Typography variant="body2" color={theme.palette.text.secondary}>
               &copy; {currentYear} Pol Torres Alfonso. All rights reserved.
