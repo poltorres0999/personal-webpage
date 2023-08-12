@@ -14,7 +14,6 @@ const App: React.FC = () => {
     <div>
       <Navbar />
       <div id="back-to-top-anchor">
-
       </div>
       <Greet />
       <About />

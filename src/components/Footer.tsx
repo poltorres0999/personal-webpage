@@ -12,7 +12,6 @@ const Footer: React.FC = () => {
     <footer>
       <Box
         sx={{
-          backgroundColor: theme.palette.grey[200],
           width: '100%',
         }}
       >
