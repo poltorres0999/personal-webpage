@@ -41,22 +41,27 @@ const PersonalProjects: React.FC = () => {
   const theme = useTheme()
 
   return (
-    <Box sx={{ my: 12 }}>
-      <Grid container justifyContent="center" alignItems="center">
-        <Grid item xs={12} sm={9} sx={{ my: 2 }}>
-          <Stack spacing={2} justifyContent="center" alignItems="center" sx={{ maxWidth: "80%", mx: "auto" }}>
-            <Typography variant="h4" sx={{ mb: 2 }}>
-              Check My Skills
-            </Typography>
-            <Typography variant='body1' align='justify'>
-              Check out a bunch of personal projects I've put together to show off my skills. These projects aren't meant for production, but they're like little showcases of how I organize, code, and document things. And if your system meets the requirements, you can actually download and try them out firsthand.
-            </Typography>
-            <Typography fontWeight={"bold"} textAlign={"center"} variant='h5'>DevOps related projects</Typography>
-            <DevOpsProjects />
-          </Stack>
+    <div id="projects">
+
+
+      <Box sx={{ my: 12 }}>
+        <Grid container justifyContent="center" alignItems="center">
+          <Grid item xs={12} sm={9} sx={{ my: 2 }}>
+            <Stack spacing={2} justifyContent="center" alignItems="center" sx={{ maxWidth: "80%", mx: "auto" }}>
+              <Typography variant="h4" sx={{ mb: 2 }}>
+                Check My Skills
+              </Typography>
+              <Typography variant='body1' align='justify'>
+                Check out a bunch of personal projects I've put together to show off my skills. These projects aren't meant for production, but they're like little showcases of how I organize, code, and document things. And if your system meets the requirements, you can actually download and try them out firsthand.
+              </Typography>
+              <Typography fontWeight={"bold"} textAlign={"center"} variant='h5'>DevOps related projects</Typography>
+              <DevOpsProjects />
+            </Stack>
+          </Grid>
         </Grid>
-      </Grid>
-    </Box>
+      </Box>
+    </div>
+
   );
 
 };

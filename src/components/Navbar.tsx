@@ -15,6 +15,13 @@ const DropdownMenu = () => {
     setAnchorEl(null);
   };
 
+  function navigateToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   const theme = useTheme()
 
   return (
@@ -33,10 +40,10 @@ const DropdownMenu = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} href="#about">About</MenuItem>
-        <MenuItem onClick={handleClose} href="#experience">Experience</MenuItem>
-        <MenuItem onClick={handleClose}href="#projects">Personal Projects</MenuItem>
-        <MenuItem onClick={handleClose}href="#contact">Contact</MenuItem>
+        <MenuItem onClick={() => navigateToSection('about')}>About</MenuItem>
+        <MenuItem onClick={() => navigateToSection('experience')}>Experience</MenuItem>
+        <MenuItem onClick={() => navigateToSection('projects')}>Personal Projects</MenuItem>
+        <MenuItem onClick={() => navigateToSection('contact')}>Contact</MenuItem>
       </Menu>
     </div>
   );
@@ -91,7 +98,7 @@ const NavBar = () => {
               <Button color="inherit" href="#about">About</Button>
               <Button color="inherit" href="#experience">Experience</Button>
               <Button color="inherit" href="#projects">Personal Projects</Button>
-              <Button color="inherit" href="#hire">Contact</Button>
+              <Button color="inherit" href="#contact">Contact</Button>
             </div>
         }
 

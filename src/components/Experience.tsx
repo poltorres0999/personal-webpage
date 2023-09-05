@@ -130,9 +130,10 @@ const Experience: React.FC = () => {
   const theme = useTheme();
 
   return (
-      <Box sx={{backgroundColor: theme.palette.grey[200]}}>
-        <Container id="experience" sx={{pt: 12, pb: 12}}>
-          <Stack spacing={4} justifyContent="center" alignItems="center" sx={{maxWidth: "80%", mx: "auto" }}>
+    <div id="experience">
+      <Box sx={{ backgroundColor: theme.palette.grey[200] }}>
+        <Container sx={{ pt: 12 }}>
+          <Stack spacing={4} justifyContent="center" alignItems="center" sx={{ maxWidth: "80%", mx: "auto" }}>
             <Typography variant="h4" sx={{ my: 4 }}>
               Experience
             </Typography>
@@ -142,6 +143,7 @@ const Experience: React.FC = () => {
           </Stack>
         </Container>
       </Box>
+    </div>
   );
 };
 

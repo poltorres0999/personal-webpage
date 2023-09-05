@@ -67,7 +67,6 @@ const About: React.FC = () => {
                 </Container>
             </Box>
         </div>
-
     );
 };
 
